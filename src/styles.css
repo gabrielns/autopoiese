@@ -73,3 +73,177 @@ main {
        or add specific styles if main needs to be different for login.
        For now, we assume the existing 'main' styles are sufficient. */
 }
+
+/* General Styles */
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header Styles */
+header {
+    background: #004080; /* Dark blue, science-y */
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 3px solid #007bff; /* Brighter blue accent */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main { /* This will override the previous main style for width and padding for ScienceHub pages */
+    padding: 20px 0; /* Reset padding for ScienceHub main content */
+    width: 100%; /* Allow container to control width */
+    margin: 0; /* Reset margin for ScienceHub main content */
+}
+
+main h2 { /* Section titles */
+    font-size: 2em;
+    color: #004080;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Featured Article Styles */
+.featured-article article {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+}
+
+.featured-article article img {
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.featured-article article h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.featured-article article p {
+    font-size: 1.1em;
+}
+
+.featured-article article span {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+/* Articles Grid Styles (for latest and category sections) */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.articles-grid article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.articles-grid article img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.articles-grid article h3 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.articles-grid article p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.articles-grid article span { /* For category/date in latest-articles */
+    font-size: 0.85em;
+    color: #777;
+}
+
+/* Category Section Specifics (if any needed beyond general .articles-grid) */
+.category-section {
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    border-top: 3px solid #000;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #007bff;
+}
