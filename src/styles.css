@@ -19,3 +19,57 @@ main > h1 {
   text-align: center;
   font-size: 3.5em;
 }
+
+/* Styles for login.html */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#loginForm div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between label and input */
+}
+
+#loginForm label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Ensure some space below the label */
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+#loginForm button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#loginForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Center the login form within the main container if desired */
+main {
+    /* The existing main style already centers content,
+       but ensure it works well with the form.
+       Adjust width if necessary for the login page context,
+       or add specific styles if main needs to be different for login.
+       For now, we assume the existing 'main' styles are sufficient. */
+}
