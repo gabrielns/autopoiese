@@ -1,18 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Science Project</title>
+  <title>ScienceHub - Your Source for Science News</title>
 </head>
 
 <body>
-  <main>
-    <h1>ScieProject App</h1>
-    <p><a href="login.html">Go to Login Page</a></p>
-  </main>
-</body>
+  <header>
+    <div class="container">
+      <h1>ScienceHub</h1>
+      <p>Exploring the Wonders of Science</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#biology">Biology</a></li>
+          <li><a href="#chemistry">Chemistry</a></li>
+          <li><a href="#physics">Physics</a></li>
+          <li><a href="#author">Author</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <div class="container">
+      <section class="featured-article">
+        <h2>Featured Story</h2>
+        <article>
+          <img src="https://via.placeholder.com/800x400.png?text=Featured+Article+Image" alt="Placeholder for featured article image" style="width:100%;">
+          <h3><a href="#">Revolutionary Discovery in Quantum Physics</a></h3>
+          <p>Scientists have made a groundbreaking discovery that could change our understanding of the universe. This new finding in quantum physics opens up exciting possibilities for future technologies...</p>
+          <span>Category: Physics | Date: June 10, 2024</span>
+        </article>
+      </section>
+
+      <section class="latest-articles">
+        <h2>Latest Discoveries</h2>
+        <div class="articles-grid">
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Article+Image+1" alt="Placeholder image 1">
+            <h3><a href="#">New Species of Deep Sea Organism Found</a></h3>
+            <p>A previously unknown organism has been discovered in the Mariana Trench, showcasing the biodiversity of our oceans...</p>
+            <span>Category: Biology | Date: June 9, 2024</span>
+          </article>
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Article+Image+2" alt="Placeholder image 2">
+            <h3><a href="#">Breakthrough in Sustainable Chemistry</a></h3>
+            <p>Researchers develop a new catalyst that could make chemical manufacturing greener and more efficient...</p>
+            <span>Category: Chemistry | Date: June 8, 2024</span>
+          </article>
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Article+Image+3" alt="Placeholder image 3">
+            <h3><a href="#">The Mysteries of Dark Matter Deepen</a></h3>
+            <p>Recent observations challenge existing theories about dark matter, prompting new avenues of research...</p>
+            <span>Category: Physics | Date: June 7, 2024</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="biology" class="category-section">
+        <h2>Biology Highlights</h2>
+        <div class="articles-grid">
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Biology+Article+1" alt="Placeholder image">
+            <h3><a href="#">The Role of Gut Microbiome in Health</a></h3>
+            <p>Exploring how the trillions of bacteria in our gut influence our overall well-being...</p>
+          </article>
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Biology+Article+2" alt="Placeholder image">
+            <h3><a href="#">Advances in Gene Editing Technologies</a></h3>
+            <p>What CRISPR and other gene editing tools mean for the future of medicine...</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="chemistry" class="category-section">
+        <h2>Chemistry Highlights</h2>
+        <div class="articles-grid">
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Chemistry+Article+1" alt="Placeholder image">
+            <h3><a href="#">New Polymers for Biodegradable Plastics</a></h3>
+            <p>Innovations in polymer chemistry aim to tackle plastic pollution...</p>
+          </article>
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Chemistry+Article+2" alt="Placeholder image">
+            <h3><a href="#">Understanding Catalytic Converters Better</a></h3>
+            <p>Improving the efficiency of catalysts for cleaner air...</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="physics" class="category-section">
+        <h2>Physics Highlights</h2>
+        <div class="articles-grid">
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Physics+Article+1" alt="Placeholder image">
+            <h3><a href="#">Exploring the Potential of Fusion Energy</a></h3>
+            <p>The race to achieve sustainable fusion power continues with new breakthroughs...</p>
+          </article>
+          <article>
+            <img src="https://via.placeholder.com/400x200.png?text=Physics+Article+2" alt="Placeholder image">
+            <h3><a href="#">Gravitational Waves: A New Window to the Universe</a></h3>
+            <p>How detecting ripples in spacetime is revolutionizing astronomy...</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="author">
+    <div class="container">
+      <p>Site by Gabriel Nunes da Silva, science teacher at Therezinha Aranha Mantelli School.</p>
+      <p>&copy; 2024 ScienceHub. All rights reserved.</p>
+      <!-- Optional: Add links for Privacy Policy, Terms, Contact here -->
+    </div>
+  </footer>
+
+</body>
 </html>
